@@ -14,6 +14,14 @@
 		7C600FBE1BEC71A40056330C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C600FBC1BEC71A40056330C /* LaunchScreen.storyboard */; };
 		7C600FC91BEC71A40056330C /* AnimationSwiftSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C600FC81BEC71A40056330C /* AnimationSwiftSampleTests.swift */; };
 		7C600FD41BEC71A40056330C /* AnimationSwiftSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C600FD31BEC71A40056330C /* AnimationSwiftSampleUITests.swift */; };
+		7C600FE31BEC72170056330C /* LCActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C600FE21BEC72170056330C /* LCActivityIndicatorView.swift */; };
+		7C600FE51BEC72540056330C /* ActivityIndicatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C600FE41BEC72540056330C /* ActivityIndicatorType.swift */; };
+		7C600FE91BEC771B0056330C /* ActivityIndicatorAnimationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C600FE81BEC771B0056330C /* ActivityIndicatorAnimationDelegate.swift */; };
+		7C600FEE1BEC785F0056330C /* ActivityIndicatorAnimationBallBeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C600FED1BEC785F0056330C /* ActivityIndicatorAnimationBallBeat.swift */; };
+		7C600FF01BEC7B4A0056330C /* ActivityIndicatorShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C600FEF1BEC7B4A0056330C /* ActivityIndicatorShape.swift */; };
+		7CED547F1BEC920D0068817E /* ActivityIndicatorAnimationBallClipRotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CED547E1BEC920D0068817E /* ActivityIndicatorAnimationBallClipRotate.swift */; };
+		7CED54811BEC98830068817E /* ActivityIndicatorAnimationSquareSpin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CED54801BEC98830068817E /* ActivityIndicatorAnimationSquareSpin.swift */; };
+		7CED54831BECA44B0068817E /* ActivityIndicatorAnimationBallClipRotateMultiple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CED54821BECA44B0068817E /* ActivityIndicatorAnimationBallClipRotateMultiple.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +55,14 @@
 		7C600FCF1BEC71A40056330C /* AnimationSwiftSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimationSwiftSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C600FD31BEC71A40056330C /* AnimationSwiftSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationSwiftSampleUITests.swift; sourceTree = "<group>"; };
 		7C600FD51BEC71A40056330C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C600FE21BEC72170056330C /* LCActivityIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCActivityIndicatorView.swift; sourceTree = "<group>"; };
+		7C600FE41BEC72540056330C /* ActivityIndicatorType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorType.swift; sourceTree = "<group>"; };
+		7C600FE81BEC771B0056330C /* ActivityIndicatorAnimationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorAnimationDelegate.swift; sourceTree = "<group>"; };
+		7C600FED1BEC785F0056330C /* ActivityIndicatorAnimationBallBeat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorAnimationBallBeat.swift; sourceTree = "<group>"; };
+		7C600FEF1BEC7B4A0056330C /* ActivityIndicatorShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorShape.swift; sourceTree = "<group>"; };
+		7CED547E1BEC920D0068817E /* ActivityIndicatorAnimationBallClipRotate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorAnimationBallClipRotate.swift; sourceTree = "<group>"; };
+		7CED54801BEC98830068817E /* ActivityIndicatorAnimationSquareSpin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorAnimationSquareSpin.swift; sourceTree = "<group>"; };
+		7CED54821BECA44B0068817E /* ActivityIndicatorAnimationBallClipRotateMultiple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorAnimationBallClipRotateMultiple.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +113,7 @@
 		7C600FB21BEC71A40056330C /* AnimationSwiftSample */ = {
 			isa = PBXGroup;
 			children = (
+				7C600FE11BEC71DA0056330C /* IndicatorView */,
 				7C600FB31BEC71A40056330C /* AppDelegate.swift */,
 				7C600FB51BEC71A40056330C /* ViewController.swift */,
 				7C600FB71BEC71A40056330C /* Main.storyboard */,
@@ -123,6 +140,29 @@
 				7C600FD51BEC71A40056330C /* Info.plist */,
 			);
 			path = AnimationSwiftSampleUITests;
+			sourceTree = "<group>";
+		};
+		7C600FE11BEC71DA0056330C /* IndicatorView */ = {
+			isa = PBXGroup;
+			children = (
+				7C600FEA1BEC77A40056330C /* Animations */,
+				7C600FE21BEC72170056330C /* LCActivityIndicatorView.swift */,
+				7C600FE41BEC72540056330C /* ActivityIndicatorType.swift */,
+				7C600FE81BEC771B0056330C /* ActivityIndicatorAnimationDelegate.swift */,
+				7C600FEF1BEC7B4A0056330C /* ActivityIndicatorShape.swift */,
+			);
+			path = IndicatorView;
+			sourceTree = "<group>";
+		};
+		7C600FEA1BEC77A40056330C /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				7C600FED1BEC785F0056330C /* ActivityIndicatorAnimationBallBeat.swift */,
+				7CED547E1BEC920D0068817E /* ActivityIndicatorAnimationBallClipRotate.swift */,
+				7CED54801BEC98830068817E /* ActivityIndicatorAnimationSquareSpin.swift */,
+				7CED54821BECA44B0068817E /* ActivityIndicatorAnimationBallClipRotateMultiple.swift */,
+			);
+			path = Animations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +296,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C600FF01BEC7B4A0056330C /* ActivityIndicatorShape.swift in Sources */,
+				7C600FE91BEC771B0056330C /* ActivityIndicatorAnimationDelegate.swift in Sources */,
+				7C600FE31BEC72170056330C /* LCActivityIndicatorView.swift in Sources */,
 				7C600FB61BEC71A40056330C /* ViewController.swift in Sources */,
+				7C600FE51BEC72540056330C /* ActivityIndicatorType.swift in Sources */,
+				7CED54811BEC98830068817E /* ActivityIndicatorAnimationSquareSpin.swift in Sources */,
+				7CED547F1BEC920D0068817E /* ActivityIndicatorAnimationBallClipRotate.swift in Sources */,
+				7C600FEE1BEC785F0056330C /* ActivityIndicatorAnimationBallBeat.swift in Sources */,
 				7C600FB41BEC71A40056330C /* AppDelegate.swift in Sources */,
+				7CED54831BECA44B0068817E /* ActivityIndicatorAnimationBallClipRotateMultiple.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +532,7 @@
 				7C600FDA1BEC71A40056330C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7C600FDB1BEC71A40056330C /* Build configuration list for PBXNativeTarget "AnimationSwiftSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +541,7 @@
 				7C600FDD1BEC71A40056330C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7C600FDE1BEC71A40056330C /* Build configuration list for PBXNativeTarget "AnimationSwiftSampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +550,7 @@
 				7C600FE01BEC71A40056330C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
